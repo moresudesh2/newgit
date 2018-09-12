@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<style>
+.errorTip{
+    color: red;
+    position: absolute;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+</style>
+
+<body>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-4 col-sm-4 col-xs-12"> 
+  <h2>Vertical (basic) form</h2>
+  <form class="myform">
+	
+	 <div class="form-group">
+      <label for="text">First Name:</label>
+      <input type="text" class="form-control" placeholder="First Name" name="email" id="firstname">
+	   <div class="errorTip" id="errorFname" style="display:none;">Please Enter your comment here </div>
+
+    </div>
+	
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+	    <div class="errorTip" id="errorEmail" style="display: none;">Enter Your Valid Email No.</div>
+
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="pwd">
+	    <div class="errorTip" id="errorPassword" style="display: none;">Enter Your Valid Password No.</div>
+
+    </div>
+	
+	 <div class="form-group">
+      <label for="pwd">Mobile No</label>
+      <input type="text" class="form-control number" id="mobileNO" placeholder="Mobile No." maxlength="10" name="pwd">
+	    <div class="errorTip" id="errorMobile" style="display: none;">Enter Your Valid Mobile No.</div>
+
+    </div>
+	
+	<div class="form-group">
+		 <label class="radio-inline">
+      <input type="radio" name="optradio">Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Female
+    </label>
+	</div>
+	
+    <div class="checkbox">
+      <label><input type="checkbox" id="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-default" id="submit">Submit</button>
+  </form>
+  </div>
+ </div> 
+</div>
+
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+</html>

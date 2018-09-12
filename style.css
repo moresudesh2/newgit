@@ -1,0 +1,12 @@
+*{
+	margin:0px;
+	padding:0px;
+	}
+	
+body {
+	font: 300 14px/1.8 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif !important;
+	color: #666;
+	overflow-x: hidden;
+}
+
